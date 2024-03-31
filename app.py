@@ -24,7 +24,7 @@ if scatter_checkbox: # al hacer clic en el botón
     st.write("Creación de un diagrama de dispersión para el conjunto de datos de anuncios de ventas de coches")
 
     # Crear un diagrama de dispersión
-    fig2 = px.scatter(car_data, x="model" ,y="cylinders")
+    fig2 = px.scatter(car_data, x="cylinders" ,y="model")
 
     # mostrar un gráfico Ploty interactivo
     st.plotly_chart(fig2,use_container_width=True)
