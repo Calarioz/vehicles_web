@@ -37,7 +37,7 @@ if hist_checkbox: # al hacer clic en el botón
 scatter_checkbox = st.checkbox("Construir diagrama de dispersion") #Crear un check box
 
 if scatter_checkbox: # al hacer clic en el botón
-    df_monthly_price_mean = car_data.groupby(by="type").mean().reset_index()
+    df_monthly_price_mean = car_data.groupby(by="type")["price"].mean().reset_index()
 
     # escribir un mensaje
     st.subheader("**Precio promedio de coches de acuerdo al tipo de vehiculo**")
