@@ -6,7 +6,7 @@ car_data = pd.read_csv("../vehicles_us.csv")   #Leer datos
 
 st.header("Anuncios de venta de coches")
 
-hist_button = st.button('Construit histograma') #Crear boton
+hist_button = st.button('Construir histograma') #Crear boton
 
 if hist_button: # al hacer clic en el botón
             # escribir un mensaje
